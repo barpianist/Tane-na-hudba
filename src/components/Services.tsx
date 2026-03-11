@@ -6,7 +6,7 @@ const icons = [Music, Mic, Star];
 
 export default function Services() {
   return (
-    <section className="py-20 px-6 bg-zinc-950">
+    <div className="py-20 px-6">
       <h2 className="font-serif text-5xl text-white text-center mb-16">Naše Služby</h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {SERVICES.map((service, index) => {
@@ -15,7 +15,7 @@ export default function Services() {
             <motion.div 
               key={index}
               whileHover={{ y: -10 }}
-              className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#D4A843] transition-colors"
+              className="bg-zinc-900/80 p-8 rounded-2xl border border-zinc-800 hover:border-[#D4A843] transition-colors"
             >
               <Icon className="text-[#D4A843] w-12 h-12 mb-6" />
               <h3 className="text-2xl text-white font-bold mb-4">{service.title}</h3>
@@ -31,6 +31,6 @@ export default function Services() {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

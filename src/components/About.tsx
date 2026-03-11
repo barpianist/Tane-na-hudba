@@ -3,7 +3,7 @@ import { BAND_MEMBERS } from "../constants";
 
 export default function About() {
   return (
-    <section className="py-20 px-6 bg-zinc-950">
+    <div className="py-20 px-6">
       <h2 className="font-serif text-5xl text-white text-center mb-12">Naša Zostava</h2>
       <p className="text-center text-zinc-300 mb-12 max-w-2xl mx-auto">Sme zohratá partia muzikantov, ktorá prináša energiu a vášeň na každú udalosť.</p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -22,6 +22,6 @@ export default function About() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

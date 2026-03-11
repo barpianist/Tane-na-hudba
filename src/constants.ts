@@ -14,4 +14,6 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   { text: "Neskutočná energia, parket bol stále plný!", name: "Svadobná klientka", event: "Svadba" },
   { text: "Profesionáli s úžasným repertoárom.", name: "Organizátor plesu", event: "Ples" },
+  { text: "Najlepšia voľba pre našu firemnú párty.", name: "Manažér eventu", event: "Firemný večierok" },
+  { text: "Všetci hostia boli nadšení, odporúčam!", name: "Oslávenec", event: "Narodeninová oslava" },
 ];

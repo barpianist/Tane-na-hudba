@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+    <section id="Domov" className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/party/1920/1080?blur=4')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-black/60" />
       

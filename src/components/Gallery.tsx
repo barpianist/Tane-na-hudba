@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function Gallery() {
   return (
-    <section className="py-20 px-6 bg-zinc-900">
+    <div className="py-20 px-6">
       <h2 className="font-serif text-5xl text-white text-center mb-16">Momenty zo Zábavy</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
         {[...Array(8)].map((_, i) => (
@@ -15,6 +15,6 @@ export default function Gallery() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
