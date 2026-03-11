@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <section id="Domov" className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+    <section id="Domov" className="relative h-screen flex flex-col items-center justify-start pt-24 text-center overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/party/1920/1080?blur=4')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-black/60" />
       
@@ -17,6 +17,22 @@ export default function Hero() {
         </h1>
         <p className="text-xl md:text-2xl text-zinc-200">Nezabudnuteľná párty show pre každú udalosť.</p>
       </motion.div>
+
+      <motion.img
+        src="https://picsum.photos/seed/band/300/300"
+        alt="Floating band photo"
+        className="relative z-10 mt-8 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#D4A843] shadow-lg"
+        animate={{
+          y: [0, -20, 0],
+          x: [0, 10, 0],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        referrerPolicy="no-referrer"
+      />
 
       <motion.div
         animate={{ y: [0, -20, 0] }}
